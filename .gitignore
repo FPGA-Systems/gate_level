@@ -6,6 +6,8 @@
 # Folders
 !*.srcs
 !*.srcs/**/
+!*docs
+!*docs/**/
 
 # Source files:
 !*.vhd
