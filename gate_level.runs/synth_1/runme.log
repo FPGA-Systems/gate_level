@@ -1,0 +1,316 @@
+
+*** Running vivado
+    with args -log top_KR1533IE5.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_KR1533IE5.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top_KR1533IE5.tcl -notrace
+Command: synth_design -top top_KR1533IE5 -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 37688
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1184.887 ; gain = 28.168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_KR1533IE5' [C:/prj/gate_level/gate_level.srcs/sources_1/new/top_KR1533IE5.v:23]
+INFO: [Synth 8-6157] synthesizing module 'KR1533IE5' [C:/prj/gate_level/gate_level.srcs/sources_1/new/KR1533IE5.v:4]
+INFO: [Synth 8-638] synthesizing module 'jkff' [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_nand3' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand3.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_and2' [C:/prj/gate_level/gate_level.srcs/sources_1/new/and2.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_and2' (1#1) [C:/prj/gate_level/gate_level.srcs/sources_1/new/and2.vhd:35]
+INFO: [Synth 8-6157] synthesizing module 'nand2' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:26]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_and2__parameterized0' [C:/prj/gate_level/gate_level.srcs/sources_1/new/and2.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_and2__parameterized0' (1#1) [C:/prj/gate_level/gate_level.srcs/sources_1/new/and2.vhd:35]
+INFO: [Synth 8-6157] synthesizing module 'not1' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'not1' (2#1) [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'nand2' (3#1) [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:26]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_nand3' (4#1) [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand3.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_nand4' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand4.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_nand4' (5#1) [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand4.vhd:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-28.0, C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-40.0 with 1st driver pin 'jkff:/dd7/y' [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-28.0, C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-40.0 with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:28]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-28.0, C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-40.0 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-102.4 with 1st driver pin 'jkff:/dd6/y' [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:102]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-102.4 with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:102]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-102.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:102]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-110.4 with 1st driver pin 'jkff:/dd7/y' [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:110]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-110.4 with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:110]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-110.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:110]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-110.4 with 1st driver pin 'jkff:/dd5/y' [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:110]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-110.4 with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:110]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-110.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:110]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-88.4 with 1st driver pin 'jkff:/dd3/y' [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:88]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-88.4 with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:88]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-88.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:88]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-80.4 with 1st driver pin 'jkff:/dd3/y' [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:80]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-80.4 with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:80]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-80.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:80]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-53.4 with 1st driver pin 'jkff:/dd7/y' [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:53]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-53.4 with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd-53.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'jkff' (6#1) [C:/prj/gate_level/gate_level.srcs/sources_1/new/jkff.vhd:40]
+INFO: [Synth 8-6155] done synthesizing module 'KR1533IE5' (7#1) [C:/prj/gate_level/gate_level.srcs/sources_1/new/KR1533IE5.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/prj/gate_level/gate_level.runs/synth_1/.Xil/Vivado-23448-fae-server/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (8#1) [C:/prj/gate_level/gate_level.runs/synth_1/.Xil/Vivado-23448-fae-server/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'JK_COUNTER'. This will prevent further optimization [C:/prj/gate_level/gate_level.srcs/sources_1/new/top_KR1533IE5.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'top_KR1533IE5' (9#1) [C:/prj/gate_level/gate_level.srcs/sources_1/new/top_KR1533IE5.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1237.063 ; gain = 80.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1237.063 ; gain = 80.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1237.063 ; gain = 80.344
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1237.063 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/prj/gate_level/gate_level.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
+Finished Parsing XDC File [c:/prj/gate_level/gate_level.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
+Parsing XDC File [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc]
+WARNING: [Vivado 12-584] No ports matched 'y1'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'y2'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'y3'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'y4'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'x2'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'en'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'y1'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'y2'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'y3'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'y4'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'en'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'x1'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'x1'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'x2'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:22]
+Finished Parsing XDC File [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_KR1533IE5_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_KR1533IE5_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_KR1533IE5_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1343.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1343.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1343.152 ; gain = 186.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1343.152 ; gain = 186.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for isys_clk. (constraint file  c:/prj/gate_level/gate_level.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for isys_clk. (constraint file  c:/prj/gate_level/gate_level.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc, line 4).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc, line 4).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc, line 4).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc, line 4).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc, line 4).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc, line 4).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1343.152 ; gain = 186.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1343.152 ; gain = 186.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1343.152 ; gain = 186.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1343.152 ; gain = 186.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1343.152 ; gain = 186.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1343.152 ; gain = 186.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1345.922 ; gain = 189.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1345.922 ; gain = 189.203
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_1/dd3/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_1/dd5/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_1/dd6/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_1/dd7/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_2/dd3/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_2/dd5/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_2/dd6/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_2/dd7/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_3/dd3/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_3/dd5/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_3/dd6/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_3/dd7/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_4/dd3/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_4/dd5/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_4/dd6/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 1st driver pin 'JK_COUNTER/jk_4/dd7/inst_not/y_INST_0/O' [C:/prj/gate_level/gate_level.srcs/sources_1/new/not1.v:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin y with 2nd driver pin 'GND' [C:/prj/gate_level/gate_level.srcs/sources_1/new/nand2.v:40]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       16|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1345.922 ; gain = 189.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1345.922 ; gain = 189.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1345.922 ; gain = 189.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1345.922 ; gain = 189.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |CARRY4  |     7|
+|3     |LUT1    |    35|
+|4     |LUT2    |    53|
+|5     |FDRE    |    27|
+|6     |OBUF    |     4|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1345.922 ; gain = 189.203
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 32 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1345.922 ; gain = 83.113
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1345.922 ; gain = 189.203
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1357.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1364.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 15 Warnings, 53 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1364.809 ; gain = 208.090
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/prj/gate_level/gate_level.runs/synth_1/top_KR1533IE5.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_KR1533IE5_utilization_synth.rpt -pb top_KR1533IE5_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Feb  6 13:04:27 2021...

@@ -1,0 +1,115 @@
+
+*** Running vivado
+    with args -log top_KR1533IE5.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_KR1533IE5.tcl -notrace
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top_KR1533IE5.tcl -notrace
+Command: link_design -top top_KR1533IE5 -part xc7a35tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/prj/gate_level/gate_level.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1159.703 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/prj/gate_level/gate_level.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz/inst'
+Finished Parsing XDC File [c:/prj/gate_level/gate_level.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz/inst'
+Parsing XDC File [c:/prj/gate_level/gate_level.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/prj/gate_level/gate_level.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/prj/gate_level/gate_level.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1604.527 ; gain = 444.824
+Finished Parsing XDC File [c:/prj/gate_level/gate_level.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz/inst'
+Parsing XDC File [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc]
+WARNING: [Vivado 12-584] No ports matched 'y1'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'y2'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'y3'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'y4'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x2'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'y1'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'y2'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'y3'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'y4'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x1'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x1'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x2'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'onq'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:26]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:26]
+WARNING: [Vivado 12-507] No nets matched 'oq'. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:27]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc:27]
+Finished Parsing XDC File [C:/prj/gate_level/gate_level.srcs/constrs_1/new/pin_aasign.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1604.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+10 Infos, 16 Warnings, 16 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1604.527 ; gain = 444.824
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_1/dd3/<const0> has multiple drivers: JK_COUNTER/jk_1/dd3/GND/G, and JK_COUNTER/jk_1/dd3/inst_not/y_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_1/dd5/<const0> has multiple drivers: JK_COUNTER/jk_1/dd5/GND/G, and JK_COUNTER/jk_1/dd5/inst_not/y_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_1/dd6/<const0> has multiple drivers: JK_COUNTER/jk_1/dd6/GND/G, and JK_COUNTER/jk_1/dd6/inst_not/y_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_1/dd7/<const0> has multiple drivers: JK_COUNTER/jk_1/dd7/GND/G, and JK_COUNTER/jk_1/dd7/inst_not/y_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_2/dd3/<const0> has multiple drivers: JK_COUNTER/jk_2/dd3/GND/G, and JK_COUNTER/jk_2/dd3/inst_not/y_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_2/dd5/<const0> has multiple drivers: JK_COUNTER/jk_2/dd5/GND/G, and JK_COUNTER/jk_2/dd5/inst_not/y_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_2/dd6/<const0> has multiple drivers: JK_COUNTER/jk_2/dd6/GND/G, and JK_COUNTER/jk_2/dd6/inst_not/y_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_2/dd7/<const0> has multiple drivers: JK_COUNTER/jk_2/dd7/GND/G, and JK_COUNTER/jk_2/dd7/inst_not/y_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_3/dd3/<const0> has multiple drivers: JK_COUNTER/jk_3/dd3/GND/G, and JK_COUNTER/jk_3/dd3/inst_not/y_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_3/dd5/<const0> has multiple drivers: JK_COUNTER/jk_3/dd5/GND/G, and JK_COUNTER/jk_3/dd5/inst_not/y_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_3/dd6/<const0> has multiple drivers: JK_COUNTER/jk_3/dd6/GND/G, and JK_COUNTER/jk_3/dd6/inst_not/y_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_3/dd7/<const0> has multiple drivers: JK_COUNTER/jk_3/dd7/GND/G, and JK_COUNTER/jk_3/dd7/inst_not/y_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_4/dd3/<const0> has multiple drivers: JK_COUNTER/jk_4/dd3/GND/G, and JK_COUNTER/jk_4/dd3/inst_not/y_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_4/dd5/<const0> has multiple drivers: JK_COUNTER/jk_4/dd5/GND/G, and JK_COUNTER/jk_4/dd5/inst_not/y_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_4/dd6/<const0> has multiple drivers: JK_COUNTER/jk_4/dd6/GND/G, and JK_COUNTER/jk_4/dd6/inst_not/y_INST_0/O.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net JK_COUNTER/jk_4/dd7/<const0> has multiple drivers: JK_COUNTER/jk_4/dd7/GND/G, and JK_COUNTER/jk_4/dd7/inst_not/y_INST_0/O.
+INFO: [Vivado_Tcl 4-198] DRC finished with 16 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-384] DRC checks failed. Netlist or placement errors exist in this design. Please correct these errors before proceeding.
+INFO: [Common 17-83] Releasing license: Implementation
+16 Infos, 16 Warnings, 16 Critical Warnings and 17 Errors encountered.
+place_design failed
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Sat Feb  6 13:05:00 2021...

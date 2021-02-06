@@ -23,6 +23,10 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
+library work;
+use work.all;
+
+
 entity nor2 is
     Port ( x1 : in STD_LOGIC;
            x2 : in STD_LOGIC;

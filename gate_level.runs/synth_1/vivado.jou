@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Feb  6 13:03:44 2021
+# Process ID: 23448
+# Current directory: C:/prj/gate_level/gate_level.runs/synth_1
+# Command line: vivado.exe -log top_KR1533IE5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_KR1533IE5.tcl
+# Log file: C:/prj/gate_level/gate_level.runs/synth_1/top_KR1533IE5.vds
+# Journal file: C:/prj/gate_level/gate_level.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_KR1533IE5.tcl -notrace
