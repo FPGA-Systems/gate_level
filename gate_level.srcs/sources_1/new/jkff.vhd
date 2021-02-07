@@ -33,29 +33,27 @@ entity jkff is
            inr : in STD_LOGIC;
            oq : out STD_LOGIC;
            onq : out STD_LOGIC);
-           attribute dont_touch : string;
-    attribute dont_touch of jkff : entity is "yes";
 end jkff;
 
 architecture rtl of jkff is
     
-    signal dd1_o : std_logic := '0';
-    signal dd2_o : std_logic := '0';
-    signal dd3_o : std_logic := '0';
-    signal dd4_o : std_logic := '0';
-    signal dd5_o : std_logic := '0';
-    signal dd6_o : std_logic := '0';
-    signal dd7_o : std_logic := '0';
-    signal dd8_o : std_logic := '0';
+    signal dd1_o : std_logic;
+    signal dd2_o : std_logic;
+    signal dd3_o : std_logic;
+    signal dd4_o : std_logic;
+    signal dd5_o : std_logic;
+    signal dd6_o : std_logic;
+    signal dd7_o : std_logic;
+    signal dd8_o : std_logic;
         
 begin
     
-    dd1: entity work.nand3(rtl) 
+    dd1: entity work.nand4(rtl) 
     port map (
-        --x1 => ins,
-        x1 => dd7_o,
-        x2 => ik,
-        x3 => inc,
+        x1 => ins,
+        x2 => dd8_o,
+        x3 => ik,
+        x4 => inc,
         y  => dd1_o
     );
     
@@ -63,16 +61,16 @@ begin
     port map (
         x1 => inc,
         x2 => ij,
-        x3 => dd8_o,
+        x3 => dd7_o,
         x4 => inr,
         y  => dd2_o
     );
     
-    dd3: entity work.nand2(rtl) 
+    dd3: entity work.nand3(rtl) 
     port map (
-        --x1 => ins,
-        x1 => dd2_o,
-        x2 => dd4_o,
+        x1 => ins,
+        x2 => dd1_o,
+        x3 => dd4_o,
         y  => dd3_o
     );
     
@@ -80,7 +78,7 @@ begin
     dd4: entity work.nand3(rtl) 
     port map (
         x1 => dd3_o,
-        x2 => dd1_o,
+        x2 => dd2_o,
         x3 => inr,
         y  => dd4_o
     );
@@ -99,18 +97,18 @@ begin
         y  => dd6_o
     );
     
-    dd7: entity work.nand2(rtl) 
+    dd7: entity work.nand3(rtl) 
     port map (
         x1 => dd8_o,
-        --x2 => ins,
-        x2 => dd6_o,
+        x2 => ins,
+        x3 => dd5_o,
         y  => dd7_o
     );
     
     dd8: entity work.nand3(rtl) 
     port map (
         x1 => dd7_o,
-        x2 => dd5_o,
+        x2 => dd6_o,
         x3 => inr,
         y  => dd8_o
     );
